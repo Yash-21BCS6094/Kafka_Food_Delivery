@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: delivery-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/deliverydb
+    username: postgres
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 1010
